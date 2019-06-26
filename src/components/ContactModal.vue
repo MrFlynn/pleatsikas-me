@@ -11,19 +11,19 @@
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Name">
+              <input class="input" type="text" placeholder="Name" name="name">
             </div>
           </div>
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input class="input" type="text" placeholder="name@email.com">
+              <input class="input" type="text" placeholder="name@email.com" name="email">
             </div>
           </div>
           <div class="field">
             <label class="label">Message</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Message here"></textarea>
+              <textarea class="textarea" placeholder="Message here" name="message_body"></textarea>
             </div>
           </div>
         </form>
@@ -53,6 +53,4 @@ export default {
     }
   }
 }
-
-
 </script>
