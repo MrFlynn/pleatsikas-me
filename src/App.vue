@@ -3,7 +3,7 @@
       <Navbar/>
       <div class="section">
         <div class="container">
-          <Home/>
+          <Main/>
           <ContactModal/>
         </div>
       </div>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 import Navbar from './components/Navbar.vue'
 import ContactModal from './components/ContactModal.vue'
@@ -20,7 +20,7 @@ import ContactModal from './components/ContactModal.vue'
 export default {
   name: 'app',
   components: {
-    Home,
+    Main,
     Footer,
     Navbar,
     ContactModal
@@ -30,12 +30,4 @@ export default {
 
 <style lang="sass">
   @import "bulma"
-</style>
-
-<style>
-  .footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-  }
 </style>
