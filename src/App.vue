@@ -1,33 +1,29 @@
 <template>
-    <div id="app">
-      <Navbar/>
-      <div class="section">
-        <div class="container">
-          <Main/>
-          <ContactModal/>
-        </div>
+  <div id="app">
+    <div class="columns is-gapless">
+      <div class ="column is-one-quarter has-background-light">
+        <h1>Hello world</h1>
       </div>
-      <Footer/>
+      <div class="column">
+        <h1>This is the content region</h1>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
-import Navbar from './components/Navbar.vue'
-import ContactModal from './components/ContactModal.vue'
-
 export default {
-  name: 'app',
-  components: {
-    Main,
-    Footer,
-    Navbar,
-    ContactModal
-  }
+  name: 'app'
 }
 </script>
 
 <style lang="sass">
   @import "bulma"
+</style>
+
+<style>
+  .columns {
+    display: flex;
+    height: 100vh;
+  }
 </style>
