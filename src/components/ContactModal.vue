@@ -54,3 +54,27 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+  =keyframes($name)
+    @-webkit-keyframes #{$name}
+      @content
+    @-moz-keyframes #{$name}
+      @content
+    @-ms-keyframes #{$name}
+      @content
+    @keyframes #{$name}
+      @content
+
+  +keyframes(window-fade-in)
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+
+  .modal
+    animation: window-fade-in 0.75s
+    -moz-animation: window-fade-in 0.75s
+    -webkit-animation: window-fade-in 0.75s
+    -o-animation: window-fade-in 0.75s
+</style>
