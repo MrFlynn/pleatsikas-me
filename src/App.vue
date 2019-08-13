@@ -22,9 +22,21 @@
           <div class="panel-box-centered">
             <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
               <ul>
-                <li><a class="subtitle is-5" href="https://github.com/MrFlynn">Github</a></li>
-                <li><a class="subtitle is-5" href="https://linkedin.com/in/pleatsikas">LinkedIn</a></li>
-                <li><a class="subtitle is-5">Resume</a></li>
+                <li>
+                  <a class="subtitle is-5" href="https://github.com/MrFlynn">
+                    <p class="underline">Github</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="subtitle is-5" href="https://linkedin.com/in/pleatsikas">
+                    <p class="underline">LinkedIn</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="subtitle is-5">
+                    <p class="underline">Resume</p>
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -67,10 +79,14 @@ export default {
 </script>
 
 <style lang="sass">
-  // This block contains customizations for Bulma.
+  // Imports
+  @import "./mixins.sass"
   @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700')
+
+  // Set default font family.
   $family-sans-serif: "Source Sans Pro", sans-serif
 
+  // Post imports
   @import "bulma"
 
   // Contains customizations for site-specific elements.
@@ -97,17 +113,12 @@ export default {
     p
       color: $grey-light
       a
+        +fade-in-underline($turquoise)
         color: $turquoise
-        border-bottom: 1px solid rgba(0, 209, 178, 0)
-
-        -webkit-transition: border 1000ms ease;
-        -moz-transition: border 500ms ease;
-        -ms-transition: border 500ms ease;
-        -o-transition: border 500ms ease;
-        transition: border 500ms ease;
-        &:hover
-          border-bottom: 1px solid $turquoise
     
     @media screen and (max-width: 768px)
       visibility: hidden
+
+  .underline
+    +fade-in-underline($blue)
 </style>
