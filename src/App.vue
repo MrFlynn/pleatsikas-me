@@ -45,7 +45,7 @@
           <div class="panel-box-container">
             <div class="panel-box-centered">
               <p class="panel-footer">
-                Copyright Nick Pleatsikas, 2019. Source available
+                © 2019 Nick Pleatsikas. Source available
                 <a href="https://github.com/MrFlynn/pleatsikas-me">here.</a>
               </p>
             </div>
@@ -53,7 +53,12 @@
         </div>
       </div>
       <div class="column">
-        <h1>This is the content region</h1>
+        <div class="panel-box">
+          <AboutMe/>
+          <hr/>
+          <WorkExperience/>
+          <hr/>
+        </div>
       </div>
     </div>
     <ContactModal/>
@@ -64,11 +69,15 @@
 import {eventBus} from './main';
 
 import ContactModal from './components/ContactModal.vue'
+import AboutMe from './components/AboutMe.vue'
+import WorkExperience from './components/WorkExperience.vue'
 
 export default {
   name: 'app',
   components: {
-    ContactModal
+    ContactModal,
+    AboutMe,
+    WorkExperience
   },
   methods: {
     showModal() {
@@ -83,8 +92,9 @@ export default {
   @import "./mixins.sass"
   @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700')
 
-  // Set default font family.
+  // Bulma variable overiddes.
   $family-sans-serif: "Source Sans Pro", sans-serif
+  $tablet: 900px
 
   // Post imports
   @import "bulma"
@@ -116,7 +126,7 @@ export default {
         +fade-in-underline($turquoise)
         color: $turquoise
     
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: $tablet)
       visibility: hidden
 
   .underline
