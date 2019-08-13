@@ -1,0 +1,12 @@
+// Fades in underline when cursor hovers over text.  
+=fade-in-underline($color)
+  border-bottom: 1px solid scale-color($color, $alpha: -100%)
+
+  transition: border 500ms ease
+  -webkit-transition: border 500ms ease
+  -moz-transition: border 500ms ease
+  -ms-transition: border 500ms ease
+  -o-transition: border 500ms ease
+
+  &:hover
+    border-bottom: 1px solid #{$color}
