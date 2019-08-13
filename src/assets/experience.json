@@ -1,0 +1,32 @@
+[
+  {
+    "company": {
+      "name": "Minds.ai",
+      "url": "https://minds.ai"
+    },
+    "start": "Jan 2016",
+    "end": "Present",
+    "position": "Infrastructure Engineer/DevOps",
+    "description": "TBD"
+  },
+  {
+    "company": {
+      "name": "Minds.ai",
+      "url": "https://minds.ai"
+    },
+    "start": "Jun 2015",
+    "end": "Aug 2015",
+    "position": "Intern System Administrator",
+    "description": "TBD"
+  },
+  {
+    "company": {
+      "name": "Kirby School",
+      "url": "https://kirby.org"
+    },
+    "start": "Jun 2014",
+    "end": "Aug 2014",
+    "position": "Intern System Administrator",
+    "description": "TBD"
+  }
+]
