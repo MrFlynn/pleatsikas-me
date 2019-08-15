@@ -6,7 +6,7 @@
           <article class="media">
             <div class="media-left">
               <figure class="image is-128x128">
-                <img class="is-rounded" src="./assets/profile.jpg">
+                <img class="is-rounded" src="./assets/profile.jpg" alt="profile.jpg">
               </figure>
             </div>
             <div class="media-content">
