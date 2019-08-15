@@ -1,0 +1,26 @@
+[
+  {
+    "name": "certcommander",
+    "url": "",
+    "language": "Python",
+    "description": "A tool that automates the generation and renewal of SSL certificates using the ACME (Let's Encrypt) service using DNS challenges. Designed to be fully fault-tolerant; it can resume its previous state if it is restarted or crashes. Allows the user to define plugins to work with any DNS provider. Implements a plugin system for responding to internal events. In the process of being open sourced."
+  },
+  {
+    "name": "zoom-drive-connector",
+    "url": "https://github.com/minds-ai/zoom-drive-connector",
+    "language": "Python",
+    "description": "A automation tool designed to automatically copy recorded meetings from Zoom to Google Drive. This software has been running in production for nearly 18 months."
+  },
+  {
+    "name": "µMega",
+    "url": "https://github.com/MrFlynn/micro-mega",
+    "language": "C",
+    "description": "A state-machine based operating systems and kernel with real-time user interaction written for the ATMega 1284 micro-controller. This required the design and implementation of a custom filesystem and console graphics libraries. This project also employs asynchronous message transport between state machines."
+  },
+  {
+    "name": "repo-combiner",
+    "url": "https://github.com/MrFlynn/repo-combiner",
+    "language": "Bash",
+    "description": "A archiving tool that combines multiple repositories together using advanced Git branch merging. Written to archive multiple separate repositories created in a university course on a different version control system."
+  }
+]

@@ -57,7 +57,8 @@
           <AboutMe/>
           <hr/>
           <WorkExperience/>
-          <hr/>
+          <hr style="margin-top: 0"/>
+          <Projects/>
         </div>
       </div>
     </div>
@@ -71,13 +72,15 @@ import {eventBus} from './main';
 import ContactModal from './components/ContactModal.vue'
 import AboutMe from './components/AboutMe.vue'
 import WorkExperience from './components/WorkExperience.vue'
+import Projects from './components/Projects.vue'
 
 export default {
   name: 'app',
   components: {
     ContactModal,
     AboutMe,
-    WorkExperience
+    WorkExperience,
+    Projects
   },
   methods: {
     showModal() {
@@ -95,7 +98,7 @@ export default {
   // Bulma variable overiddes.
   $family-sans-serif: "Source Sans Pro", sans-serif
   $tablet: 900px
-
+  
   // Custom color scheme.
   $dark: #13293D
   $light: #EFEFEF
