@@ -7,7 +7,11 @@
     "start": "Jan 2016",
     "end": "Present",
     "position": "Infrastructure Engineer/DevOps",
-    "description": "TBD"
+    "description": [
+      "Created software to bridge internal systems that had been disconnected eliminating several tasks that required manual work by developers, IT, and other internal staff. A couple examples of this software can be found in the Projects section below.",
+      "Introduced and standardized provisioning, configuration management, and IaaS tools like Ansible, Chef and Terraform into IT processes.",
+      "Wrote libraries and tools to assist in data preprocessing and conversion used in production workloads."
+    ]
   },
   {
     "company": {
@@ -17,7 +21,10 @@
     "start": "Jun 2015",
     "end": "Aug 2015",
     "position": "Intern System Administrator",
-    "description": "TBD"
+    "description": [
+      "Deployed initial servers used by developers to developer DL/ML software. Wrote basic management software and assisted in migrating from AWS to internal infrastructure.",
+      "Implemented communication tools that improved overall accessibility for our distributed workforce."
+    ]
   },
   {
     "company": {
@@ -26,7 +33,11 @@
     },
     "start": "Jun 2014",
     "end": "Aug 2014",
-    "position": "Intern System Administrator",
-    "description": "TBD"
+    "position": "IT Intern",
+    "description": [
+      "Assisted in design, implementation, and build of completely new network to serve 250 students. Improved overall capacity by a factor of 10. Improved network stability and accesibility.",
+      "Rolled out first set of Chromebooks following study of student preference and productivity on various models.",
+      "Assisted in reimaging computers."
+    ]
   }
 ]
