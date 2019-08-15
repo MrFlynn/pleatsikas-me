@@ -96,6 +96,13 @@ export default {
   $family-sans-serif: "Source Sans Pro", sans-serif
   $tablet: 900px
 
+  // Custom color scheme.
+  $dark: #13293D
+  $light: #EFEFEF
+  $cyan: #2A9D8F
+  $blue: #070707
+  $green: #2A9D8F
+
   // Post imports
   @import "bulma"
 
@@ -104,7 +111,7 @@ export default {
     padding: 1rem
   
   .columns
-    height: 100vh
+    min-height: 100vh
 
   .panel-box
     @extend %boxing
