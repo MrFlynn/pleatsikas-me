@@ -16,7 +16,7 @@
         also created developer tools that simplify tasks for other engineers and IT staff.
       </p>
       <p>
-        Outside of work and studying I'm a member of my University's ACM branch. I'm 
+        Outside of work and studying I'm a member of my university's ACM branch. I'm 
         also an avid soccer player, gym goer, and foodie.
       </p>
     </div>
