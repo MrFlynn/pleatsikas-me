@@ -33,7 +33,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="subtitle is-5">
+                  <a class="subtitle is-5" href="resume.pdf">
                     <p class="underline">Resume</p>
                   </a>
                 </li>

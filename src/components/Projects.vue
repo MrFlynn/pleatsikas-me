@@ -37,7 +37,7 @@ export default {
     padding-bottom: 1.5rem
 
   .project-title
-    margin-bottom: 0.2rem
+    margin-bottom: 0 !important
     float: left
 
   .field
