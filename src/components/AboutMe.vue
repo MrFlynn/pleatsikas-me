@@ -10,10 +10,11 @@
         systems, and GPU programming.
       </p>
       <p>
-        I'm also a part-time infrastructure engineer/DevOps at a ML/DL company called
-          <a class="underline" href="https://minds.ai">Minds.ai</a>.
-        I have experience in designing and writing production-grade software in Python. I have
-        also created developer tools that simplify tasks for other engineers and IT staff.
+        I worked at an AI startup for the past three years called 
+          <a class="underline" href="https://minds.ai">Minds.ai</a>
+        building developer tools and infrastructure/business automation software.
+        During my time I developed my skills building production grade 
+        applications in Python.
       </p>
       <p>
         Outside of work and studying I'm a member of my university's ACM branch. I'm 
