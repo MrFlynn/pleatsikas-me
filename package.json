@@ -10,6 +10,7 @@
   "dependencies": {
     "bulma": "^0.7.5",
     "core-js": "^2.6.5",
+    "serialize-javascript": "^2.1.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
