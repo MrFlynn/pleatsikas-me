@@ -10,15 +10,18 @@
         systems, and GPU programming.
       </p>
       <p>
-        I worked at an AI startup for the past three years called 
-          <a class="underline" href="https://minds.ai">Minds.ai</a>
-        building developer tools and infrastructure/business automation software.
+        Recently, I worked at an AI startup doing software engineering called 
+          <a class="underline" href="https://minds.ai">Minds.ai</a>.
+        I worked on building developer tools and infrastructure/business automation software.
         During my time I developed my skills building production grade 
         applications in Python.
       </p>
       <p>
-        Outside of work and studying I'm a member of my university's ACM branch. I'm 
-        also an avid soccer player, gym goer, and foodie.
+        Outside of work and studying I'm a member of my university's Cybersecurity club. 
+        I recently participated in 
+          <a class="underline" href="https://wrccdc.org">CCDC</a>
+        where my team placed in the western regional competion and got 3rd in infrastructure 
+        uptime. I'm also an avid soccer player, gym goer, and foodie.
       </p>
     </div>
   </div>

@@ -6,11 +6,11 @@
     },
     "start": "Jan 2016",
     "end": "Oct 2019",
-    "position": "Infrastructure Engineer/DevOps",
+    "position": "Software/Infrastructure Engineer",
     "description": [
-      "Created software to bridge internal systems that had been disconnected, eliminating several tasks that required manual work by developers, IT, and other internal staff. A couple examples of this software can be found in the Projects section below.",
-      "Introduced and standardized provisioning, configuration management, and IaaS tools like Ansible, Chef and Terraform into IT processes.",
-      "Wrote libraries and tools to assist in data preprocessing and conversion used in production workloads."
+      "Created software to bridge internal systems and automate infrastructure deployment. See certcommander and zoom-drive-connector below for details on two projects created during my employment.",
+      "Created data preprocessing pipelines for a large customer project. Ingested data from existing databases and did initial categorization using existing data tags/types for future deep learning stages.",
+      "Introduced standardized provisioning, configuration management, and IaaS tools like Ansible, Chef, and Terraform into IT processes. Simplified maintenance and resource provisioning for developers and administrators."
     ]
   },
   {
@@ -22,22 +22,8 @@
     "end": "Aug 2015",
     "position": "Intern System Administrator",
     "description": [
-      "Deployed initial servers used by developers to developer DL/ML software. Wrote basic management software and assisted in migrating from AWS to internal infrastructure.",
+      "Deployed initial servers used by developers to create DL/ML software. Wrote basic management software and assisted in migrating from AWS to internal infrastructure.",
       "Implemented communication tools that improved overall accessibility for our distributed workforce."
-    ]
-  },
-  {
-    "company": {
-      "name": "Kirby School",
-      "url": "https://kirby.org"
-    },
-    "start": "Jun 2014",
-    "end": "Aug 2014",
-    "position": "IT Intern",
-    "description": [
-      "Assisted in design, implementation, and build of completely new network to serve 250 students. Improved overall capacity by a factor of 10. Improved network stability and accessibility.",
-      "Rolled out first set of Chromebooks following study of student preference and productivity on various models.",
-      "Assisted in reimaging computers."
     ]
   }
 ]

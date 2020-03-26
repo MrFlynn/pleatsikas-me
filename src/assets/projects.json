@@ -1,26 +1,26 @@
 [
   {
+    "name": "Opa!",
+    "url": "https://github.com/opa-social",
+    "language": "Go, Android, Redis, Firebase",
+    "description": "A business-oriented social media app design to help people find better business partners at industry conferences built for my senior design project. I co-authored the service used to match users with each other. This service leverages classic machine learning techniques to generate matches and is built with technologies like Go, Redis, and Firebase."
+  },
+  {
+    "name": "stagelight",
+    "url": "https://github.com/MrFlynn/stagelight",
+    "language": "Go, Vue, C++, Python",
+    "description": "A proof-of-concept full stack application tying in both web and embedded systems technologies. Stagelight connects a large number of low-power, low-cost wearable devices to a web control panel with a fully-featured API. This project was written in Vue, Go, Python, and  C++ utilizing technologies like Docker, Platform.io, and packet radio communication."
+  },
+  {
     "name": "certcommander",
     "url": "",
     "language": "Python",
-    "description": "A tool that automates the generation and renewal of SSL certificates using the ACME (Let's Encrypt) service using DNS challenges. Designed to be fully fault-tolerant; it can resume its previous state if it is restarted or crashes. Allows the user to define plugins to work with any DNS provider. Implements a plugin system for responding to internal events. In the process of being open sourced."
+    "description": "A tool that automates the creation and renewal of SSL certificates using the ACME (Let's Encrypt) service using DNS challenges. Designed to be fully fault-tolerant; it can resume its previous state if it is restarted or crashes. Allows the user to define plugins to work with other DNS providers and send notifications to services like Slack."
   },
   {
     "name": "zoom-drive-connector",
     "url": "https://github.com/minds-ai/zoom-drive-connector",
     "language": "Python",
     "description": "An automation tool designed to automatically copy recorded meetings from Zoom to Google Drive. This software has been running in production for nearly 18 months."
-  },
-  {
-    "name": "µMega",
-    "url": "https://github.com/MrFlynn/micro-mega",
-    "language": "C",
-    "description": "A state machine based operating systems and kernel with real-time user interaction written for the ATMega 1284 micro-controller. This required the design and implementation of a custom filesystem and console graphics libraries. This project also employs asynchronous message transport between state machines."
-  },
-  {
-    "name": "repo-combiner",
-    "url": "https://github.com/MrFlynn/repo-combiner",
-    "language": "Bash",
-    "description": "An archiving tool that combines multiple repositories together using advanced Git branch merging. Written to archive multiple separate repositories created in a university course on a different version control system."
   }
 ]
