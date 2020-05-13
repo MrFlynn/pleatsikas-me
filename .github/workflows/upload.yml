@@ -1,0 +1,29 @@
+name: Upload
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - src/assets/resume/**
+
+jobs:
+  resume:
+    name: Compile and upload resume to Netlify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - uses: xu-cheng/latex-action@v2
+        with:
+          working_directory: "src/assets/resume"
+          root_file: resume.tex
+          args: "-xelatex -file-line-error -interaction=nonstopmode"
+          pre_compile: "cp -r simple-resume-cv/* ."
+      - uses: MrFlynn/upload-to-netlify-action@v2
+        with:
+          source-file: "src/assets/resume/resume.pdf"
+          destination-path: "/resume.pdf"
+          site-name: pleatsikas-me
+          netlify-token: ${{ secrets.NETLIFY_TOKEN }}
