@@ -1,5 +1,7 @@
 # pleatsikas-me
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2bc59369-5924-45d7-984e-fe4c17b81251/deploy-status)](https://app.netlify.com/sites/pleatsikas-me/deploys)
+
 The code for my personal website. It is written in [Vue](https://vuejs.org) and 
 compiled to as close to a static page I can get with some dynamic elements 
 (i.e. modals and the like).
