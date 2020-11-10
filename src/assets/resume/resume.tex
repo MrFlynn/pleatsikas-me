@@ -36,7 +36,6 @@ pdfcreator={XeLaTeX},
 pdfproducer={},
 pdfkeywords={},
 unicode=true,
-bookmarks=true,
 bookmarksopen=true,
 pdfstartview=FitH,
 pdfpagelayout=OneColumn,
@@ -80,6 +79,7 @@ Emeyville, CA 94608
 {Languages}
 {Languages}
 {PDF:Languages}
+\Entry
 Go, Python, Rust, C/C++
 
 %%%%%%%%%%%%
@@ -90,7 +90,8 @@ Go, Python, Rust, C/C++
 {Technologies}
 {Technologies}
 {PDF:Technologies}
-Git, Ansible, Chef, Terraform, Firebase, Redis, Docker, PostgreSQL
+\Entry
+Kubernetes, Docker, Terraform, Ansible, Redis, PostgreSQL
 
 %%%%%%%%%%%%%%%
 %% EDUCATION %%
@@ -102,20 +103,20 @@ Git, Ansible, Chef, Terraform, Firebase, Redis, Docker, PostgreSQL
 {PDF:Education}
 
 \Entry
-\href{ucr.edu}
-{\textbf{University of California, Riverside}},
-Riverside, California
+\href{https://ucr.edu}
+{\textbf{University of California, Riverside}}
 
 \Gap
 \BulletItem
 B.Sc., in
-\href{https://engr.ucr.edu}
+\href{https://www.engr.ucr.edu}
 {Computer Engineering}
 \hfill
-\textit{Expected Jun 2020}
+\DatestampYMD{2016}{09}{21} --
+\DatestampYMD{2020}{06}{15}
 \begin{Detail}
 \SubBulletItem
-GPA: 3.80
+GPA: 3.81
 \end{Detail}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,48 +132,41 @@ Experience}
 \Entry
 \href{https://minds.ai}
 {\textbf{Minds.ai}},
-Santa Cruz, CA
-
+Software/Infrastructure Engineer 
+\hfill \DatestampYMD{2016}{01}{05} -- \DatestampYMD{2019}{10}{01}
 \Gap
+
 \BulletItem
-Software/Infrastructure Engineer
-\hfill
-\DatestampYMD{2016}{01}{05} --
-\DatestampYMD{2019}{10}{01}
-\begin{Detail}
-\SubBulletItem
-Created and deployed web services to assist in manual dataset and database tagging. Deployed
-data preprocessing pipelines to ingest and categorize database tables for deep learning
-backend. Completed during summer-long software engineering focused role.
-\SubBulletItem
-Created software in Python to bridge internal systems and automate infrastructure deployment.
-See \textit{certcommander} and \textit{zoom-drive-connector} below for details on two
-projects created during my employment.
-\SubBulletItem
-Provisioned Kubernetes deployment used to serve machine learning jobs to on-site hardware and Google Cloud platform.
-\SubBulletItem
-Introduced standardized provisioning, configuration management, and IaaS tools like Ansible, Chef, and Terraform into IT processes. Simplified maintenance and resource provisioning for
-developers and administrators.
-\end{Detail}
+Created software to manage a fleet of Linux servers and to integrate with platforms 
+like Kubernetes and VMWare, reducing friction for developers.
+\Gap
+
+\BulletItem
+Wrote software to automate manual business tasks. For example, after deploying \\
+\textbf{zoom-drive-connector}, up to 30 minutes of work per day was saved.
+\Gap
+
+\BulletItem
+Worked with customers to create and deploy data preprocessing pipelines in Python and C. 
+\Gap
+
+\BulletItem
+Maintained corporate AWS, GCP, and on-site datacenter infrastructure with Ansible and Terraform, allowing
+seamless integration of company and customer environments.
+
 \BigGap
 
 \Entry
 \href{https://minds.ai}
-{\textbf{Minds.ai}},
-Santa Cruz, CA
-
-\Gap
-\BulletItem
+{\textbf{Minds.ai}}, 
 Intern System Administrator
-\hfill
-\DatestampYMD{2015}{06}{15} --
-\DatestampYMD{2015}{08}{15}
-\begin{Detail}
-\SubBulletItem
-Deployed initial servers used by developers to create DL/ML software. Wrote basic management software and assisted in migrating from AWS to internal infrastructure.
-\SubBulletItem
-Implemented communication tools like Slack that improved overall accessibility for our distributed workforce.
-\end{Detail}
+\hfill \DatestampYMD{2015}{06}{15} -- \DatestampYMD{2015}{08}{15}
+\Gap
+
+\BulletItem
+Wrote tools to migrate our 
+environment off AWS to our private datacenter, reducing monthly overhead by \$9,000.
+
 \BigGap
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -185,31 +179,34 @@ Implemented communication tools like Slack that improved overall accessibility f
 {PDF:Projects}
 
 \Entry
+\href{https://airalert.app}
+{\textbf{Air Alert}}: Go, PostgreSQL, Redis, Kubernetes, Terraform
+\BulletItem
+A full-stack web app that keeps you informed of changes in air quality. This application
+integrates, processes, and stores AQI data to make forecasts and alert users using web push 
+notifications. It provides a fully featured REST API for external apps. It is deployed on 
+top of Kubernetes using Terraform. Source code
+can be found \href{https://github.com/MrFlynn/air-alert}{\underline{here}}.
+\hfill
+\BigGap
+
+\Entry
 \href{https://github.com/opa-social}
 {\textbf{Opa!}}: Go, Android, Redis, Firebase
 \BulletItem
 A business-oriented social media app design to help people find better business partners
-at industry conferences built for my senior design project. I co-authored the service 
-used to match users with each other. This service leverages classic machine learning 
-techniques to generate matches and is built with technologies like Go, Redis, and Firebase.
+at industry conferences. I wrote the backend application that matches users based on 
+mutual interests by leveraging classic machine learning techniques.
 \hfill
 \BigGap
 
 \Entry
-\href{https://github.com/MrFlynn/stagelight}
-{\textbf{stagelight}}: Go, Vue, C++, Python
+{\textbf{certcommander}}: Python, Kubernetes
 \BulletItem
-A proof-of-concept full stack application tying in both web and embedded systems technologies.
-Stagelight connects a large number of low-power, low-cost wearable devices to a web control
-panel with a fully-featured API. This project was written in Vue, Go, Python, and 
-C++ utilizing technologies like Docker, Platform.io, and packet radio communication.
-\hfill
-\BigGap
-
-\Entry
-{\textbf{certcommander}}: Python
-\BulletItem
-A tool that automates the creation and renewal of SSL certificates using the ACME (Let's Encrypt) service using DNS challenges. Designed to be fully fault-tolerant; it can resume its previous state if it is restarted or crashes. Allows the user to define plugins to work with other DNS providers and send notifications to services like Slack.
+A platform for automating the management of SSL certificates across multiple services within our 
+datacenter. It allowed administrators to request certificates using an API and defined hooks for
+external applications to extend its functionality. It was designed from the ground-up to be
+fault-tolerant and gracefully recover from crashes.
 \hfill
 \BigGap
 
@@ -217,7 +214,8 @@ A tool that automates the creation and renewal of SSL certificates using the ACM
 \href{https://github.com/minds-ai/zoom-drive-connector}
 {\textbf{zoom-drive-connector}}: Python
 \BulletItem
-An automation tool designed to automatically copy recorded meetings from Zoom to Google Drive.
+An application to automatically copy video meeting archives from Zoom to Google Drive. This tool was key
+in keeping our distributed workforce informed by providing easy access to all public meetings.
 \hfill
 \BigGap
 
@@ -230,32 +228,11 @@ An automation tool designed to automatically copy recorded meetings from Zoom to
 {Relevant Course Work}
 {PDF:Relevant Course Work}
 
-\BulletItem\textbf{CS111}: Discrete Structures \& Math
-\BulletItem\textbf{CS141}: Intermediate Data Structures and Algorithms
-\BulletItem\textbf{CS147}: GPU Programming
+\BulletItem\textbf{CS141}: Data Structures and Algorithms
 \BulletItem\textbf{CS164}: Computer Networks
 \BulletItem\textbf{CS171}: Machine Learning and Data Mining
 \BulletItem\textbf{CS172}: Information Retrieval
-
-%%%%%%%%%%%%
-%% Awards %%
-%%%%%%%%%%%%
-\Section
-{Awards}
-{Awards}
-{PDF:Awards}
-
-\BulletItem
-BCOE Dean's List 
-\hfill
-\DatestampYMD{2016}{09}{23} --
-\DatestampYMD{2017}{12}{15},
-\DatestampYMD{2018}{04}{01} --
-Present
-\begin{Detail}
-\Item
-For achieving a GPA of 3.5 or higher per quarter.
-\end{Detail}
+\BulletItem\textbf{CS179I}: Computer Networks Senior Design
 
 \end{Body}
 \end{document}
