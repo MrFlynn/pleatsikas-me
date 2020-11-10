@@ -44,5 +44,5 @@ export default {
       margin-bottom: 0 !important
 
     ul
-      margin-top: 0
+      margin-top: 0.75rem
 </style>
