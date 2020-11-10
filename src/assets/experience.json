@@ -8,9 +8,10 @@
     "end": "Oct 2019",
     "position": "Software/Infrastructure Engineer",
     "description": [
-      "Created software to bridge internal systems and automate infrastructure deployment. See certcommander and zoom-drive-connector below for details on two projects created during my employment.",
-      "Created data preprocessing pipelines for a large customer project. Ingested data from existing databases and did initial categorization using existing data tags/types for future deep learning stages.",
-      "Introduced standardized provisioning, configuration management, and IaaS tools like Ansible, Chef, and Terraform into IT processes. Simplified maintenance and resource provisioning for developers and administrators."
+      "Created software to manage a fleet of Linux servers and to integrate with platforms like Kubernetes and VMWare, reducing friction for developers.",
+      "Wrote software to automate manual business tasks. For example, after deploying zoom-drive-connector, up to 30 minutes of work per day was saved.",
+      "Worked with customers to create and deploy data preprocessing pipelines in Python and C.",
+      "Maintained corporate AWS, GCP, and on-site datacenter infrastructure with Ansible and Terraform, allowing seamless integration of company and customer environments."
     ]
   },
   {
@@ -22,8 +23,7 @@
     "end": "Aug 2015",
     "position": "Intern System Administrator",
     "description": [
-      "Deployed initial servers used by developers to create DL/ML software. Wrote basic management software and assisted in migrating from AWS to internal infrastructure.",
-      "Implemented communication tools that improved overall accessibility for our distributed workforce."
+      "Wrote tools to migrate our environment off AWS to our private datacenter, reducing monthly overhead by $9,000."
     ]
   }
 ]
