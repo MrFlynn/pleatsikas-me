@@ -3,7 +3,7 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Contact Form</p>
+        <strong class="modal-card-title">Contact Form</strong>
         <button @click="isHidden = true" class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
@@ -73,8 +73,8 @@ export default {
       opacity: 1
 
   .modal
-    animation: window-fade-in 0.75s
-    -moz-animation: window-fade-in 0.75s
-    -webkit-animation: window-fade-in 0.75s
-    -o-animation: window-fade-in 0.75s
+    animation: window-fade-in 0.4s
+    -moz-animation: window-fade-in 0.4s
+    -webkit-animation: window-fade-in 0.4s
+    -o-animation: window-fade-in 0.4s
 </style>
