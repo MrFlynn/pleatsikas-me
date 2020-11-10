@@ -11,7 +11,7 @@
     "bulma": "^0.9.1",
     "core-js": "^3.6.5",
     "mixin-deep": "^2.0.1",
-    "serialize-javascript": "^3.0.0",
+    "serialize-javascript": "^3.1.0",
     "set-value": "^3.0.2",
     "vue": "^2.6.10"
   },
