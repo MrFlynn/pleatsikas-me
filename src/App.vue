@@ -40,8 +40,8 @@
             <div class="panel-box-container">
               <div class="panel-box-centered">
                 <p class="panel-footer">
-                  © 2020 Nick Pleatsikas. Source available
-                  <a href="https://github.com/MrFlynn/pleatsikas-me">here.</a>
+                  © 2020 Nick Pleatsikas. 
+                  <a href="https://github.com/MrFlynn/pleatsikas-me">Source.</a>
                 </p>
               </div>
             </div>
