@@ -17,7 +17,7 @@
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input v-model="form.email" class="input" type="text" placeholder="name@email.com" name="email">
+              <input v-model="form.email" class="input" type="text" placeholder="name@email.com" inputmode="email" name="email">
             </div>
           </div>
           <div class="field">
