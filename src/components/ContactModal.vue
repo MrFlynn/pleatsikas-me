@@ -3,7 +3,7 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <strong class="modal-card-title">Contact Form</strong>
+        <strong class="modal-card-title">Contact me</strong>
         <button @click="isHidden = true" class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
@@ -26,12 +26,9 @@
               <textarea class="textarea" placeholder="Message here" name="message_body"></textarea>
             </div>
           </div>
+          <button class="button is-success" type="submit">Submit</button>
         </form>
       </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success" type="submit">Submit</button>
-        <button @click="isHidden = true" class="button">Cancel</button>
-      </footer>
     </div>
   </div>
 </template>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Nick Pleatsikas's personal website, Created by Nick Pleatsikas.">
+    <meta name="description" content="Nick Pleatsikas's personal website. Created by Nick Pleatsikas.">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>Nick Pleatsikas</title>
   </head>
@@ -12,6 +12,12 @@
     <noscript>
       <strong>We're sorry but this website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <!-- Dummy form so that Netlify picks up the actual form modal -->
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" name="name">
+      <input type="email" name="email">
+      <textarea name="message_body"></textarea>
+    </form>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
