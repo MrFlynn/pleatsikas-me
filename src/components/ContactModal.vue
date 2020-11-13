@@ -7,23 +7,23 @@
         <button @click="isHidden = true" class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" @submit.prevent="submitForm" data-netlify="true">
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Name" name="name">
+              <input v-model="form.name" class="input" type="text" placeholder="Name" name="name">
             </div>
           </div>
           <div class="field">
             <label class="label">Email</label>
             <div class="control">
-              <input class="input" type="text" placeholder="name@email.com" name="email">
+              <input v-model="form.email" class="input" type="text" placeholder="name@email.com" name="email">
             </div>
           </div>
           <div class="field">
             <label class="label">Message</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Message here" name="message_body"></textarea>
+              <textarea v-model="form.message_body" class="textarea" placeholder="Message here" name="message_body"></textarea>
             </div>
           </div>
           <button class="button is-success" type="submit">Submit</button>
@@ -34,6 +34,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 import {eventBus} from '../main';
 
 export default {
@@ -47,6 +49,36 @@ export default {
     isHidden: {
       type: Boolean,
       default: true
+    }
+  },
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        message_body: ""
+      }
+    }
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data).map(
+        key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+      ).join('&');
+    },
+    submitForm() {
+      axios.post(
+        "/",
+        this.encode({
+          "form-name": "contact",
+          ...this.form
+        }),
+        {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          }
+        }
+      );
     }
   }
 }
