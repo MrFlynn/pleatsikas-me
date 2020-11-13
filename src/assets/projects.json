@@ -2,25 +2,25 @@
   {
     "name": "Air Alert",
     "url": "https://github.com/mrflynn/air-alert",
-    "language": "Go, PostgreSQL, Redis, Kubernetes, Terraform",
+    "language": ["Go", "PostgreSQL", "Redis", "Kubernetes", "Terraform"],
     "description": "A full-stack web app that keeps you informed of changes in air quality. This application integrates, processes, and stores AQI data to make forecasts and alert users using web push notifications. It provides a fully featured REST API for external apps. It is deployed on top of Kubernetes using Terraform."
   },
   {
     "name": "Opa!",
     "url": "https://github.com/opa-social",
-    "language": "Go, Android, Redis, Firebase",
+    "language": ["Go", "Android", "Redis", "Firebase"],
     "description": "A business-oriented social media app design to help people find better business partners at industry conferences. I wrote the backend application that matches users based on mutual interests by leveraging classic machine learning techniques."
   },
   {
     "name": "certcommander",
     "url": "",
-    "language": "Python, Kubernetes",
+    "language": ["Python", "Kubernetes"],
     "description": "A platform for automating the management of SSL certificates across multiple services within our datacenter. It allowed administrators to request certificates using an API and defined hooks for external applications to extend its functionality. It was designed from the ground-up to be fault-tolerant and gracefully recover from crashes."
   },
   {
     "name": "zoom-drive-connector",
     "url": "https://github.com/minds-ai/zoom-drive-connector",
-    "language": "Python",
+    "language": ["Python"],
     "description": "An application to automatically copy video meeting archives from Zoom to Google Drive. This tool was key in keeping our distributed workforce informed by providing easy access to all public meetings."
   }
 ]

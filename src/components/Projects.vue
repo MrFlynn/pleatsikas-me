@@ -1,18 +1,14 @@
 <template>
   <div class="container">
     <h1 class="title is-2">Projects</h1>
-    <div class="project-entry content" v-for="(project, idx) in projects" :key="idx">
+    <div class="project-entry content" v-for="(project, i) in projects" :key="i">
       <div class="field is-grouped is-grouped-multiline">
         <span class="tag is-large is-info link">
           <a :href=project.url v-if="project.url != ''">{{ project.name }}</a>
           <p v-else>{{ project.name }}</p>
         </span>
-        <div class="control">
-          <div class="tags tag-wide has-addons">
-            <span class="tag is-large is-dark">Built with</span>
-            <span class="tag is-large is-info languages">{{ project.language }}</span>
-          </div>
-        </div>
+        <span class="tag is-large is-dark">Built with</span>
+        <span v-for="(lang, j) in project.language" :key="j" class="tag is-large is-light">{{ lang }}</span>
       </div>
       <p class="project-description">{{ project.description }}</p>
     </div>
@@ -43,4 +39,7 @@ export default {
   .project-description
     clear: both
     padding-left: 1rem
+
+  .tag
+    margin-bottom: 0.75rem
 </style>
