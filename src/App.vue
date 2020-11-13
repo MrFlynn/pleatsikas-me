@@ -59,6 +59,7 @@
       </div>
       <ContactModal/>
     </div>
+    <Notification/>
   </div>
 </template>
 
@@ -69,6 +70,7 @@ import ContactModal from './components/ContactModal.vue'
 import AboutMe from './components/AboutMe.vue'
 import WorkExperience from './components/WorkExperience.vue'
 import Projects from './components/Projects.vue'
+import Notification from './components/Notification.vue'
 
 export default {
   name: 'app',
@@ -76,7 +78,8 @@ export default {
     ContactModal,
     AboutMe,
     WorkExperience,
-    Projects
+    Projects,
+    Notification
   },
   methods: {
     showModal() {

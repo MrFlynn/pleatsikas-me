@@ -61,6 +61,12 @@ export default {
     }
   },
   methods: {
+    createNotification(type, message) {
+      eventBus.$emit('notificationHidden', {
+        type,
+        message
+      });
+    },
     encode(data) {
       return Object.keys(data).map(
         key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
@@ -68,39 +74,33 @@ export default {
     },
     submitForm() {
       axios.post(
-        "/",
+        '/',
         this.encode({
-          "form-name": "contact",
+          'form-name': 'contact',
           ...this.form
         }),
         {
           headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
+            'Content-Type': 'application/x-www-form-urlencoded'
           }
         }
-      );
+      ).then(() => {
+        this.createNotification(0, 'Thanks for contacting me. I will get back to you as soon as I can!');
+      }).catch(err => {
+        this.createNotification(1, `Could not send message: ${err}.`)
+      }).then(() => {
+        this.isHidden = true;
+
+        this.form.name = '';
+        this.form.email = '';
+        this.form.message_body = '';
+      });
     }
   }
 }
 </script>
 
-<style lang="sass">
-  =keyframes($name)
-    @-webkit-keyframes #{$name}
-      @content
-    @-moz-keyframes #{$name}
-      @content
-    @-ms-keyframes #{$name}
-      @content
-    @keyframes #{$name}
-      @content
-
-  +keyframes(window-fade-in)
-    0%
-      opacity: 0
-    100%
-      opacity: 1
-
+<style lang="sass" scoped>
   .modal
     animation: window-fade-in 0.4s
     -moz-animation: window-fade-in 0.4s

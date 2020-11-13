@@ -10,3 +10,20 @@
 
   &:hover
     border-bottom: 1px solid #{$color}
+
+// Fades in modal and notification windows.
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
++keyframes(window-fade-in)
+  0%
+    opacity: 0
+  100%
+    opacity: 1
