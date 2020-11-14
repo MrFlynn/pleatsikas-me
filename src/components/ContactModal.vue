@@ -26,6 +26,7 @@
               <textarea v-model="form.message_body" class="textarea" placeholder="Message here" name="message_body"></textarea>
             </div>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <button class="button is-success" type="submit">Submit</button>
         </form>
       </section>
