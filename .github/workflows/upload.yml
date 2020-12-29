@@ -15,13 +15,13 @@ jobs:
           submodules: true
       - uses: xu-cheng/latex-action@v2
         with:
-          working_directory: "src/assets/resume"
+          working_directory: "src/assets/simple-resume-cv"
           root_file: resume.tex
+          pre_compile: "cp ../resume.tex ." 
           args: "-xelatex -file-line-error -interaction=nonstopmode"
-          pre_compile: "cp -r simple-resume-cv/* ."
       - uses: MrFlynn/upload-to-netlify-action@v2
         with:
-          source-file: "src/assets/resume/resume.pdf"
+          source-file: "src/assets/simple-resume-cv/resume.pdf"
           destination-path: "/resume.pdf"
           site-name: pleatsikas-me
           netlify-token: ${{ secrets.NETLIFY_TOKEN }}
