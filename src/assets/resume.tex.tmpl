@@ -156,7 +156,11 @@ Experience}
 
 {{ range .Projects }}
 \Entry
+{{ if eq .URL "" }}
+\textbf{ {{ .Name }}: }{{ .Language }}
+{{ else }}
 \href{ {{ .URL }} }{ \textbf{ {{ .Name }}: } }{{ .Language }}
+{{ end }}
 \BulletItem
 {{ .Description }}
 \hfill
