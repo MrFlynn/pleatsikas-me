@@ -9,7 +9,7 @@
     "position": "Software/Infrastructure Engineer",
     "description": [
       "Created software to manage a fleet of Linux servers and to integrate with platforms like Kubernetes and VMWare, reducing friction for developers.",
-      "Wrote software to automate manual business tasks. For example, after deploying zoom-drive-connector, up to 30 minutes of work per day was saved.",
+      "Wrote software to automate manual business tasks. For example, after deploying Zoom Drive Connector up to 30 minutes of work per day was saved.",
       "Worked with customers to create and deploy data preprocessing pipelines in Python and C.",
       "Maintained corporate AWS, GCP, and on-site datacenter infrastructure with Ansible and Terraform, allowing seamless integration of company and customer environments."
     ]
