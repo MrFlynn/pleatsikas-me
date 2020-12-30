@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"regexp"
 	"strings"
 	"text/template"
 	"time"
@@ -16,6 +17,8 @@ var (
 	outFileName        string
 	experienceFileName string
 	projectsFileName   string
+
+	escapeLatex = regexp.MustCompile(`\$`)
 )
 
 func init() {
@@ -65,6 +68,10 @@ func (e *experience) UnmarshalJSON(data []byte) error {
 
 	e.Start = start
 	e.End = end
+
+	for i, line := range e.Description {
+		e.Description[i] = escapeLatex.ReplaceAllLiteralString(line, `\$`)
+	}
 
 	return nil
 }
