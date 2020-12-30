@@ -17,3 +17,10 @@ $ yarn build # Create release build.
 ```
 
 To build a pdf version of my resume you need Latexmk with XeLaTeX installed.
+In order to generate my resume from a template run the following:
+```bash
+$ cd src/assets
+$ go run ../../tools/resume-builder/main.go
+```
+
+_Note:_ You will need the Go toolchain installed.
