@@ -129,45 +129,21 @@ Experience}
 {Work Experience}
 {PDF:WorkExperience}
 
+{{ range .Work }}
 \Entry
-\href{https://minds.ai}
-{\textbf{Minds.ai}},
-Software/Infrastructure Engineer 
-\hfill \DatestampYMD{2016}{01}{05} -- \DatestampYMD{2019}{10}{01}
+\href{ {{ .Company.URL }} }{\textbf{ {{ .Company.Name }} }}
+{{ .Position }}
+{{ .FormatDateRange }}
 \Gap
 
+{{ range $item := .Description }}
 \BulletItem
-Created software to manage a fleet of Linux servers and to integrate with platforms 
-like Kubernetes and VMWare, reducing friction for developers.
+{{ $item }}
 \Gap
-
-\BulletItem
-Wrote software to automate manual business tasks. For example, after deploying \\
-\textbf{zoom-drive-connector}, up to 30 minutes of work per day was saved.
-\Gap
-
-\BulletItem
-Worked with customers to create and deploy data preprocessing pipelines in Python and C. 
-\Gap
-
-\BulletItem
-Maintained corporate AWS, GCP, and on-site datacenter infrastructure with Ansible and Terraform, allowing
-seamless integration of company and customer environments.
+{{ end }}
 
 \BigGap
-
-\Entry
-\href{https://minds.ai}
-{\textbf{Minds.ai}}, 
-Intern System Administrator
-\hfill \DatestampYMD{2015}{06}{15} -- \DatestampYMD{2015}{08}{15}
-\Gap
-
-\BulletItem
-Wrote tools to migrate our 
-environment off AWS to our private datacenter, reducing monthly overhead by \$9,000.
-
-\BigGap
+{{ end }}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Projects %%
@@ -178,46 +154,14 @@ environment off AWS to our private datacenter, reducing monthly overhead by \$9,
 {Projects}
 {PDF:Projects}
 
+{{ range .Projects }}
 \Entry
-\href{https://airalert.app}
-{\textbf{Air Alert}}: Go, PostgreSQL, Redis, Kubernetes, Terraform
+\href{ {{ .URL }} }{ \textbf{ {{ .Name }}: } }{{ .Language }}
 \BulletItem
-A full-stack web app that keeps you informed of changes in air quality. This application
-integrates, processes, and stores AQI data to make forecasts and alert users using web push 
-notifications. It provides a fully featured REST API for external apps. It is deployed on 
-top of Kubernetes using Terraform. Source code
-can be found \href{https://github.com/MrFlynn/air-alert}{\underline{here}}.
+{{ .Description }}
 \hfill
 \BigGap
-
-\Entry
-\href{https://github.com/opa-social}
-{\textbf{Opa!}}: Go, Android, Redis, Firebase
-\BulletItem
-A business-oriented social media app design to help people find better business partners
-at industry conferences. I wrote the backend application that matches users based on 
-mutual interests by leveraging classic machine learning techniques.
-\hfill
-\BigGap
-
-\Entry
-{\textbf{certcommander}}: Python, Kubernetes
-\BulletItem
-A platform for automating the management of SSL certificates across multiple services within our 
-datacenter. It allowed administrators to request certificates using an API and defined hooks for
-external applications to extend its functionality. It was designed from the ground-up to be
-fault-tolerant and gracefully recover from crashes.
-\hfill
-\BigGap
-
-\Entry
-\href{https://github.com/minds-ai/zoom-drive-connector}
-{\textbf{zoom-drive-connector}}: Python
-\BulletItem
-An application to automatically copy video meeting archives from Zoom to Google Drive. This tool was key
-in keeping our distributed workforce informed by providing easy access to all public meetings.
-\hfill
-\BigGap
+{{ end }}
 
 %%%%%%%%%%%%%%%
 % Course Work %
