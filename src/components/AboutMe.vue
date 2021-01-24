@@ -12,8 +12,8 @@
         built and scaled their cloud and datacenter environments.
       </p>
       <p>
-        Outside of work and school I like to play soccer and rock climb. I also
-        love to cook.
+        Outside of school or work I like to rock climb and play soccer. I also
+        occasionally write entertaining Discord bots.
       </p>
     </div>
   </div>
