@@ -46,5 +46,11 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "resolutions": {
+    "glob-parent": "6.0.0",
+    "normalize-url": "6.0.1",
+    "css-what": "5.0.1",
+    "trim-newlines": "4.0.1"
+  }
 }
