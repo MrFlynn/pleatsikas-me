@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"fmt"
 	"log"
 	"os"
 	"regexp"
@@ -11,6 +10,8 @@ import (
 	"text/template"
 	"time"
 )
+
+const latexDateTemplate = `\DatestampYMD{2006}{01}{02}`
 
 var (
 	inFileName         string
@@ -40,9 +41,14 @@ type experience struct {
 	End         time.Time `json:"end"`
 	Position    string    `json:"position"`
 	Description []string  `json:"description"`
+
+	// If the position is still ongoing
+	current bool
 }
 
 func (e *experience) UnmarshalJSON(data []byte) error {
+	var err error
+
 	type alias experience
 	aux := struct {
 		Start string `json:"start"`
@@ -52,22 +58,26 @@ func (e *experience) UnmarshalJSON(data []byte) error {
 		alias: (*alias)(e),
 	}
 
-	if err := json.Unmarshal(data, &aux); err != nil {
-		return err
-	}
-
-	start, err := time.Parse("Jan 2006", aux.Start)
+	err = json.Unmarshal(data, &aux)
 	if err != nil {
 		return err
 	}
 
-	end, err := time.Parse("Jan 2006", aux.End)
+	e.Start, err = time.Parse("Jan 2006", aux.Start)
 	if err != nil {
 		return err
 	}
 
-	e.Start = start
-	e.End = end
+	if strings.ToLower(aux.End) == "present" {
+		e.End = time.Now()
+		e.current = true
+	} else {
+		e.End, err = time.Parse("Jan 2006", aux.End)
+
+		if err != nil {
+			return err
+		}
+	}
 
 	for i, line := range e.Description {
 		e.Description[i] = escapeLatex.ReplaceAllLiteralString(line, `\$`)
@@ -77,21 +87,14 @@ func (e *experience) UnmarshalJSON(data []byte) error {
 }
 
 func (e experience) FormatDateRange() string {
-	var (
-		yearStart  = e.Start.Format("2006")
-		monthStart = e.Start.Format("01")
-		dayStart   = e.Start.Format("02")
+	start := e.Start.Format(latexDateTemplate)
+	end := "Present"
 
-		yearEnd  = e.End.Format("2006")
-		monthEnd = e.End.Format("01")
-		dayEnd   = e.End.Format("02")
-	)
+	if !e.current {
+		end = e.End.Format(latexDateTemplate)
+	}
 
-	return fmt.Sprintf(
-		"\\hfill \\DatestampYMD{%s}{%s}{%s} -- \\DatestampYMD{%s}{%s}{%s}",
-		yearStart, monthStart, dayStart,
-		yearEnd, monthEnd, dayEnd,
-	)
+	return `\hfill ` + start + " -- " + end
 }
 
 func parseExperience() ([]experience, error) {
