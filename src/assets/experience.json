@@ -1,6 +1,16 @@
 [
   {
     "company": {
+      "name": "TikTok",
+      "url": "https://tiktok.com"
+    },
+    "start": "Mar 2021",
+    "end": "Present",
+    "position": "Site Reliability Engineer",
+    "description": []
+  },
+  {
+    "company": {
       "name": "Minds.ai",
       "url": "https://minds.ai"
     },
@@ -12,18 +22,6 @@
       "Wrote software to automate manual business tasks. For example, after deploying Zoom Drive Connector up to 30 minutes of work per day was saved.",
       "Worked with customers to create and deploy data preprocessing pipelines in Python and C.",
       "Maintained corporate AWS, GCP, and on-site datacenter infrastructure with Ansible and Terraform, allowing seamless integration of company and customer environments."
-    ]
-  },
-  {
-    "company": {
-      "name": "Minds.ai",
-      "url": "https://minds.ai"
-    },
-    "start": "Jun 2015",
-    "end": "Aug 2015",
-    "position": "Intern System Administrator",
-    "description": [
-      "Wrote tools to migrate our environment off AWS to our private datacenter, reducing monthly overhead by $9,000."
     ]
   }
 ]
