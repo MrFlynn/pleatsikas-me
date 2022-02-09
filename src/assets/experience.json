@@ -7,7 +7,11 @@
     "start": "Mar 2021",
     "end": "Present",
     "position": "Site Reliability Engineer",
-    "description": []
+    "description": [
+      "Helped to build global edge CDN server deployment platform, significantly reducing deployment time and required manual effort.",
+      "Took ownership of custom operating system build pipeline. Worked with external stakeholders to integrate required customizations into the image.",
+      "Built tools and processes to automate the import of server information into global IPAM platform."
+    ]
   },
   {
     "company": {
