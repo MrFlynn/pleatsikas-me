@@ -5,7 +5,7 @@
       <p>
         Hello there! I'm Nick, a Site Reliability Engineer at
           <a class="underline" href="https://tiktok.com">TikTok</a>
-        were I've been building systems to rapidly deploy and scale up
+        where I've been building systems to rapidly deploy and scale up
         our in-house CDN infrastructure.
       </p>
       <p>
