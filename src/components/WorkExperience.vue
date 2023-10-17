@@ -12,7 +12,7 @@
             <span class="tag is-large is-light">{{ job.start }} ⇢ {{ job.end }}</span>
           </div>
           <ul>
-            <li v-for="(line, j) in job.description" :key="j">{{ line }}</li>
+            <li v-for="(line, j) in job.description" :key="j" v-html="line"></li>
           </ul>
         </div>
       </div>
@@ -36,6 +36,9 @@ export default {
 <style lang="sass" scoped>
   $blue: #0E7C7B
   @import "bulma/sass/utilities/initial-variables.sass"
+
+  .tag
+    margin-top: 0.5rem
 
   .job-entry
     padding-bottom: 1.5rem

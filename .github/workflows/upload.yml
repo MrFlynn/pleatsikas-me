@@ -10,25 +10,15 @@ jobs:
     name: Compile and upload resume to Netlify
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: xu-cheng/latex-action@v3
         with:
-          submodules: true
-      - uses: actions/setup-go@v2
-        with:
-          go-version: "1.15"
-      - name: Generate resume from template
-        working-directory: "./src/assets"
-        run: |
-          go run ../../tools/resume-builder/main.go
-      - uses: xu-cheng/latex-action@v2
-        with:
-          working_directory: "src/assets/simple-resume-cv"
+          working_directory: "src/assets"
           root_file: resume.tex
-          pre_compile: "cp ../resume.tex ." 
-          args: "-xelatex -file-line-error -interaction=nonstopmode"
-      - uses: MrFlynn/upload-to-netlify-action@v2
+      - uses: MrFlynn/upload-to-netlify-action@v3
         with:
-          source-file: "src/assets/simple-resume-cv/resume.pdf"
+          source-file: "src/assets/resume.pdf"
           destination-path: "/resume.pdf"
           site-name: pleatsikas-me
           netlify-token: ${{ secrets.NETLIFY_TOKEN }}
+          branch-name: master

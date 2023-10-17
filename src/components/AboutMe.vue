@@ -3,17 +3,14 @@
     <h1 class="title is-2">About me</h1>
     <div class="content">
       <p>
-        Hello there! I'm Nick, a recent computer engineering graduate from
-          <a class="underline" href="https://ucr.edu">University of California, Riverside</a>.
+        Hello there! I'm Nick, a Site Reliability Engineer at
+          <a class="underline" href="https://tiktok.com">TikTok</a>
+        were I've been building systems to rapidly deploy and scale up
+        our in-house CDN infrastructure.
       </p>
       <p>
-        Recently, I worked at an AI startup called 
-          <a class="underline" href="https://minds.ai">Minds.ai</a> where I 
-        built and scaled their cloud and datacenter environments.
-      </p>
-      <p>
-        Outside of school or work I like to rock climb and play soccer. I also
-        occasionally write entertaining Discord bots.
+        Outside work I volunteer for transit advocacy groups in the Bay Area.
+        I also occasionally write entertaining Discord bots.
       </p>
     </div>
   </div>

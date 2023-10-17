@@ -6,11 +6,12 @@
     },
     "start": "Mar 2021",
     "end": "Present",
-    "position": "Site Reliability Engineer",
+    "position": "Site Reliability Engineer, CDN Infrastructure",
     "description": [
-      "Helped to build global edge CDN server deployment platform, significantly reducing deployment time and required manual effort.",
-      "Took ownership of custom operating system build pipeline. Worked with external stakeholders to integrate required customizations into the image.",
-      "Built tools and processes to automate the import of server information into global IPAM platform."
+      "Developed automated server provisioning application, <i>reducing deployment time by over 70%</i> and ensuring consistent configuration across our fleet.",
+      "Led development and support of Linux-based OS for CDN, replacing error prone OS setup process, and collaborated with internal customers to identify fixes and improvements.",
+      "Built tools to automate setup of bare metal servers end-to-end, improving configuration correctness, further helping us meet our customer SLAs. Worked with operations engineers to refine tools based on feedback.",
+      "Created multi-team working group to streamline process of loading data into global IPAM platform, ensuring server metadata was correct and up to date."
     ]
   },
   {
@@ -20,12 +21,23 @@
     },
     "start": "Jan 2016",
     "end": "Oct 2019",
-    "position": "Software/Infrastructure Engineer",
+    "position": "Infrastructure Engineer, Bare Metal",
     "description": [
-      "Created software to manage a fleet of Linux servers and to integrate with platforms like Kubernetes and VMWare, reducing friction for developers.",
-      "Wrote software to automate manual business tasks. For example, after deploying Zoom Drive Connector up to 30 minutes of work per day was saved.",
-      "Worked with customers to create and deploy data preprocessing pipelines in Python and C.",
-      "Maintained corporate AWS, GCP, and on-site datacenter infrastructure with Ansible and Terraform, allowing seamless integration of company and customer environments."
+      "Assumed ownership of bare metal servers, including software upgrades, hardware breakfixes, and network management.",
+      "Led migration of servers to a new colocation facility, <i>reducing monthly datacenter costs by 60%.</i>",
+      "Created tools to automate common business functions, reducing repetitive work and freeing up resources. One such tool, <a class=\"underline\" href=https://github.com/minds-ai/zoom-drive-connector>zoom-drive-connector</a>, <i>eliminated up to 30 minutes of manual work per day.</i>"
+    ]
+  },
+  {
+    "company": {
+      "name": "Minds.ai",
+      "url": "https://minds.ai"
+    },
+    "start": "Jun 2015",
+    "end": "Aug 2015",
+    "position": "IT Intern",
+    "description": [
+      "Setup and performed routine maintenance on company’s first GPU cluster. Created access policies for users and customer data."
     ]
   }
 ]
