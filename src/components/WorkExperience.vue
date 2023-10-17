@@ -12,7 +12,7 @@
             <span class="tag is-large is-light">{{ job.start }} ⇢ {{ job.end }}</span>
           </div>
           <ul>
-            <li v-for="(line, j) in job.description" :key="j">{{ line }}</li>
+            <li v-for="(line, j) in job.description" :key="j" v-html="line"></li>
           </ul>
         </div>
       </div>
