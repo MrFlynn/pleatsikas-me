@@ -6,12 +6,12 @@
     },
     "start": "Mar 2021",
     "end": "Present",
-    "position": "Site Reliability Engineer, CDN Infrastructure",
+    "position": "Site Reliability Engineer, Edge Infrastructure",
     "description": [
-      "Developed automated server provisioning application, <i>reducing deployment time by over 70%</i> and ensuring consistent configuration across our fleet.",
-      "Led development and support of Linux-based OS for CDN, replacing error prone OS setup process, and collaborated with internal customers to identify fixes and improvements.",
-      "Built tools to automate setup of bare metal servers end-to-end, improving configuration correctness, further helping us meet our customer SLAs. Worked with operations engineers to refine tools based on feedback.",
-      "Created multi-team working group to streamline process of loading data into global IPAM platform, ensuring server metadata was correct and up to date."
+      "Led development and implementation of bare metal server provisioning infrastructure across 200+ edge PoPs globally.",
+      "Enhanced workflows and tools and reduced our time-to-deployment for new servers by <i>over 60%</i>.",
+      "Integrated Cluster API into server provisioning infrastructure and enabled internal teams to upgrade <i>over 70</i> legacy clusters in 3 months.",
+      "Owned custom Linux distribution for edge servers, including development, maintenance, and troubleshooting."
     ]
   },
   {
@@ -23,7 +23,7 @@
     "end": "Oct 2019",
     "position": "Infrastructure Engineer, Bare Metal",
     "description": [
-      "Assumed ownership of bare metal servers, including software upgrades, hardware breakfixes, and network management.",
+      "Owned and managed GPU cluster infrastructure including software and network stacks.",
       "Led migration of servers to a new colocation facility, <i>reducing monthly datacenter costs by 60%.</i>",
       "Created tools to automate common business functions, reducing repetitive work and freeing up resources. One such tool, <a class=\"underline\" href=https://github.com/minds-ai/zoom-drive-connector>zoom-drive-connector</a>, <i>eliminated up to 30 minutes of manual work per day.</i>"
     ]
