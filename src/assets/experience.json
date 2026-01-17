@@ -1,6 +1,15 @@
 [
   {
     "company": {
+      "name": "Alchemy",
+      "url": "https://www.alchemy.com"
+    },
+    "start": "Sep 2025",
+    "end": "current",
+    "position": "Cloud Infrastructure Engineer"
+  },
+  {
+    "company": {
       "name": "TikTok",
       "url": "https://tiktok.com"
     },
