@@ -5,8 +5,13 @@
       "url": "https://www.alchemy.com"
     },
     "start": "Sep 2025",
-    "end": "current",
-    "position": "Cloud Infrastructure Engineer"
+    "end": "Present",
+    "position": "Cloud Infrastructure Engineer",
+    "description": [
+      "Implemented MCP tools for AI code reviews to enhance change safety and ownership discoverability.",
+      "Drove infrastructure changes across AWS to achieve SOC 2 compliance on schedule.",
+      "Consolidated redundant and retired legacy infrastructure as part of broad cost-savings effort."
+    ]
   },
   {
     "company": {
